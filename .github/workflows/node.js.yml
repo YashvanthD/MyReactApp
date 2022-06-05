@@ -28,7 +28,8 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm i gh-pages
+    - run: npm install -g serve
     - run: npm run build 
-    - run: npm test
+    - run: serve -s build
     - run: npm run deploy
 
