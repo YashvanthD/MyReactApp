@@ -31,4 +31,5 @@ jobs:
     - run: npm test
     - run: npm run deploy 
     - run: npm run build
-    - run: npm gh-page -d build
+    - run: npm install gh-pages
+    - run: npm gh-pages -d build
